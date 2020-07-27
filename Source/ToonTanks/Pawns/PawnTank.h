@@ -25,6 +25,8 @@ public:
 
 	virtual void HandleDestruction() override;
 
+	bool GetIsPlayerAlive();
+
 private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	USpringArmComponent* SpringArm;
@@ -39,6 +41,8 @@ private:
 	FQuat RotationDirection;
 
 	APlayerController* PlayerControllerRef;
+	bool bIsPlayerAlive = true;
+
 	FHitResult TraceHitResult;
 
 	void CalculateMoveInput(float Value);

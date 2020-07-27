@@ -21,9 +21,9 @@ protected:
 public:
 	void ActorDied(AActor* DeadActor);
 	UFUNCTION(BlueprintImplementableEvent)
-		void GameStart();
+	void GameStart();
 	UFUNCTION(BlueprintImplementableEvent)
-		void GameOver(bool PlayerWon);
+	void GameOver(bool PlayerWon);
 
 private:
 	int32 TargetTurrets = 0;
@@ -31,10 +31,10 @@ private:
 
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Player", meta = (AllowPrivateAccess = "true"))
-		APawnTank* PlayerTank;
+	APawnTank* PlayerTank;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Game Loop", meta = (AllowPrivateAccess = "true"))
-		int StartDelay = 3;
+	int StartDelay = 3;
 
 	int32 GetTargetTurretCount();
 	void HandleGameStart();
