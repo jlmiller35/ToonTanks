@@ -79,6 +79,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{8E2F6A87-1826-34F4-940C-CC23A48F9FE4}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UE4", "Intermediate\ProjectFiles\UE4.vcxproj", "{613C103E-2AB7-400E-BD88-A2C87D4DF122}"
+	ProjectSection(ProjectDependencies) = postProject
+		{992C341F-E0ED-49E0-A5FE-2DA6E506AB00} = {992C341F-E0ED-49E0-A5FE-2DA6E506AB00}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ToonTanks", "Intermediate\ProjectFiles\ToonTanks.vcxproj", "{992C341F-E0ED-49E0-A5FE-2DA6E506AB00}"
 EndProject
@@ -107,6 +110,7 @@ Global
 		{613C103E-2AB7-400E-BD88-A2C87D4DF122}.DebugGame|Win64.ActiveCfg = BuiltWithUnrealBuildTool|Win32
 		{613C103E-2AB7-400E-BD88-A2C87D4DF122}.Development Editor|Win32.ActiveCfg = BuiltWithUnrealBuildTool|Win32
 		{613C103E-2AB7-400E-BD88-A2C87D4DF122}.Development Editor|Win64.ActiveCfg = BuiltWithUnrealBuildTool|Win32
+		{613C103E-2AB7-400E-BD88-A2C87D4DF122}.Development Editor|Win64.Build.0 = BuiltWithUnrealBuildTool|Win32
 		{613C103E-2AB7-400E-BD88-A2C87D4DF122}.Development|Win32.ActiveCfg = BuiltWithUnrealBuildTool|Win32
 		{613C103E-2AB7-400E-BD88-A2C87D4DF122}.Development|Win64.ActiveCfg = BuiltWithUnrealBuildTool|Win32
 		{613C103E-2AB7-400E-BD88-A2C87D4DF122}.Shipping|Win32.ActiveCfg = BuiltWithUnrealBuildTool|Win32
@@ -136,6 +140,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{613C103E-2AB7-400E-BD88-A2C87D4DF122} = {94A6C6F3-99B3-346E-9557-ABF9D4064DBD}
 		{992C341F-E0ED-49E0-A5FE-2DA6E506AB00} = {8E2F6A87-1826-34F4-940C-CC23A48F9FE4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68D5304E-3CB6-447A-A3C6-FE94499F277C}
 	EndGlobalSection
 EndGlobal
 >>>>>>> Add project files.
